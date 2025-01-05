@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index2.css" />
+    <link rel="stylesheet" href="./style/bodyImg.css" />
+    <link rel="stylesheet" href="./style/product.css" />
+    <link rel="stylesheet" href="./style/cart&wishlist.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0"
+          alt="mylogo"
+        />
+        <div class="pincode">
+          <h5 class="h5-class">
+            <img
+              class="current-img"
+              src="https://cdn-icons-png.flaticon.com/128/222/222506.png"
+              alt=""
+            />Express delivery to
+          </h5>
+          <input type="text" id="pincode" placeholder="Enter Pincode" />
+<div class="links">
+            <a href="Products.html#Must-Have">Medicine</a>
+            <a href="Products.html#Skin-Care">Skin Care</a>
+
+            <a href="Products.html#Elderly-essential">Elderly Essential</a>
+            <a href="#">PLUS</a>
+            <a href="#">Offers</a>
+            <a href="#">Value Store</a>
+          </div>
+        </div>
+      </div>
+          
+          
+
+      <!-- Search Bar -->
+      <div class="search-bar hidden" id="searchBar">
+        <input type="text" placeholder="Search for Shampoo" id="searchInput" />
+        <button id="searchButton">Search</button>
+      </div>
+
+      <!-- Actions with Icons -->
+      <div class="actions">
+        <a id="openDrawerBtn" href="#" class="action-item" title="Login">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2321/2321232.png"
+            alt="Login"
+          />
+          <h4>Hi, Login</h4>
+        </a>
+        <a
+          href="#"
+          class="action-item"
+          onclick="handleClick('Offers')"
+          title="Offers"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/8480/8480947.png"
+            alt="Offers"
+          />
+          <h4>Offers</h4>
+        </a>
+        <a href="wishlist.html" class="action-item" title="Wishlist">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
+            alt="Wishlist"
+          />
+          <h4>Wishlist</h4>
+        </a>
+        <a href="cart.html" class="action-item" title="Cart">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/9219/9219671.png"
+            alt="Cart"
+          />
+          <h4>Cart</h4>
+        </a>
+      </div>
+
+      
+    </div>
+
+    
+
+    <!-- login box      -->
+    <div id="drawer" class="drawer">
+      <div class="drawer-header">
+        <h2>Login to continue with your order</h2>
+        <button id="closeDrawerBtn" class="close-btn">×</button>
+      </div>
+      <div class="drawer-body">
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <label for="showPassword" class="show-password-label">
+            <input type="checkbox" id="showPassword" />
+            <span>Show Password</span>
+          </label>
+          <button type="submit">Login</button>
+        </form>
+        <!-- <button id="closeButton">Close</button> -->
+        <p>
+          By continuing, you agree with our
+          <a href="#">Privacy Policy</a> and
+          <a href="#">Terms and Conditions</a>.
+        </p>
+      </div>
+    </div>
+    <!-- //all done //  -->
+
+    <!-- first-row images   // body images below search bar  -->
+    <div class="image-row">
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Must-Have">Medicine</a></h4>
+        <h5>SAVE 22% OFF</h5>
+      </div>
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Must-Have">Medicine Name</a></h4>
+        <h5>UPTO 70%  OFF</h5>
+      </div>
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Must-Have">Skin Care</a></h4>
+        <h5>UPTO 60% OFF</h5>
+      </div>
+
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Elderly-essential">Essentials</a></h4>
+        <h5>SAVE 5% Extra</h5>
+      </div>
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Elderly-essential">PLUS</a></h4>
+        <h5></h5>
+      </div>
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Must-Have">Offers</a></h4>
+        <h5>Description</h5>
+      </div>
+      <div class="image-item">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0"
+          alt="Medicine Image"
+        />
+        <h4><a href="Products.html#Must-Have">Value Store</a></h4>
+        <h5>SAVE 30% OFF</h5>
+      </div>
+    </div>
+
+    <!-- Scrollable Image Row -->
+     <div class="scroll-container">
+  <button class="scroll-arrow left" onclick="scrollLeft()">&#9664;</button>
+  
+  <div class="scrollable-row">
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9a70bdb9913-POCKETEASY_1.jpg" alt="Scroll Image 1" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/f88cd56bf09-POCKETEASY_3.jpg" alt="Scroll Image 2" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/d6f58020ab3-9.jpg" alt="Scroll Image 3" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/28e895880fa-Arth_B.jpg" alt="Scroll Image 4" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/ee88a3600a1-INYOU_Banner_A.jpg" alt="Scroll Image 5" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/f5adb56bdfb-BPPP.jpg" alt="Scroll Image 6" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/1183ad82bb8-NEW-SLIPPERS.jpg" alt="Scroll Image 7" />
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/96ab45d1818-PR_Brand_Page.jpg" alt="Scroll Image 8" />
+  </div>
+  
+  <button class="scroll-arrow right" onclick="scrollRight()">&#9654;</button>
+</div>
+
+ 
+
+
+    <!-- shop by categories  -->
+    <div class="categories">
+  <h2>Shop by Categories</h2>
+  <div class="categories-container">
+    <a href="Products.html#Must-Have" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="Must haves" />
+      <h4>Must haves</h4>
+    </a>
+    <a href="Products.html#Must-Have" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/a368dd6d66833c4187d1dceaed1440b4.png?f=png?dim=256x0" alt="Sports nutrition" />
+      <h4>Sports nutrition</h4>
+    </a>
+    <a href="Products.html#Elderly-essential" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png?f=png?dim=256x0" alt="Elderly care" />
+      <h4>Elderly care</h4>
+    </a>
+    <a href="Products.html#Must-Have" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4ad821ba8f5e3223b3d984ccab5e8942.png?f=png?dim=256x0" alt="Cardiac store" />
+      <h4>Cardiac store</h4>
+    </a>
+    <a href="Products.html#Skin-Care" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/0689de18413f37ed943f91db3745908d.png?f=png?dim=256x0" alt="Personal care" />
+      <h4>Personal care</h4>
+    </a>
+    <a href="Products.html#Skin-Care" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png?f=png?dim=256x0" alt="Healthcare devices" />
+      <h4>Healthcare devices</h4>
+    </a>
+    <a href="Products.html#Skin-Care" class="category-item">
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6c4351e2d61d364dbeb5167023a0bc3a.png?f=png?dim=256x0" alt="Health food and drinks" />
+      <h4>Health food and drinks</h4>
+    </a>
+  </div>
+
+  <!-- family long design  -->
+    <div class="membership-banner">
+    <div class="membership-text">
+      <h2>Become a <span class="highlight">Plus</span> member</h2>
+      <p>And enjoy extra bachat on every order</p>
+      <p class="sub-text">Save 5% on medicines, 50% on 1st lab test & get FREE delivery with PLUS membership <a href="#" class="learn-more">Know more ></a></p>
+      <button class="explore-button">Explore Now &#9654;</button>
+    </div>
+    <div class="membership-image">
+      <img src="https://assets.pharmeasy.in/apothecary/_next/static/media/PlusFamily.22677720.png?dim=1440x0" alt="Family" />
+    </div>
+  </div>
+
+
+ <!-- //footer -->
+    <div class="footer">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Partner with Us</a></li>
+          <li><a href="#">Sell on Our Platform</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Order Medicine</a></li>
+          <li><a href="#">Healthcare Products</a></li>
+          <li><a href="#">Lab Tests</a></li>
+          <li><a href="#">Find Collection Centre</a></li>
+        </ul>
+      </div>
+     
+      <div class="footer-column">
+        <h4>Need Help</h4>
+        <ul>
+          <li><a href="#">Browse All Medicines</a></li>
+          <li><a href="#">Browse All Molecules</a></li>
+          <li><a href="#">Browse All Cities</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Policy Info</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us On</h4>
+        <div class="social-icons">
+          <a href="#"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=32x0"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=32x0"
+              alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=32x0"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=32x0"
+              alt="YouTube"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- //bottom -->
+    <h4>Our Payment Partners</h4>
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1440x0"
+          alt="GPay"
+        />
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1440x0"
+          alt="Phonepay"
+        />
+
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1440x0"
+          alt="Paytm"
+        />
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/visa.png?dim=1440x0"
+          alt="Visa"
+        />
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/mastercard.png?dim=1440x0"
+          alt="MasterCard"
+        />
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/rupay.png?dim=1440x0"
+          alt="RuPay"
+        />
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/amazon.png?dim=1440x0"
+          alt="RuPay"
+        />
+      </div>
+      <p class="bottom-para">&copy; 2024 Your Company. All Rights Reserved.</p>
+    </div>  
+</div>    
+  </body>
+  <script src="./script/navbar.js"></script>
+  <script src="./script/login.js"></script>
+  <script src="./script/bodyImg.js"></script>
+  <script src="./script/product.js"></script>
+  <script src="./script/wishlist.js"></script>
+  <script src="./script/cart.js"></script>
+  <script src="./script/search.js"></script>
+</html>

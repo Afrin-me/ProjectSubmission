@@ -1,0 +1,237 @@
+/* image row  */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto;
+    gap: 10px;
+}
+
+.image-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item h4,
+.image-item h5 {
+    margin: 5px 0;
+}
+
+/* Hover Effect */
+.image-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.image-item:hover h4,
+.image-item:hover h5 {
+    color: #007bff;
+}
+
+/* secondrow images styling  */
+/* Style for scrollable container */
+.scroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px auto;
+    max-width: 90%;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll buttons */
+.scroll-button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+.scroll-button:hover {
+    background-color: #005bb5;
+}
+
+/* Scrollable row */
+.scrollable-row {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.scrollable-row img {
+    width: 450px;
+    height:180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.scrollable-row img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hide scrollbar for a cleaner look */
+.scrollable-row::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-row {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+ 
+    
+
+
+
+/* shope by categoris */
+.categories {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-item {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.category-item img:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-item h4 {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* family design styling  */
+.membership-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #8a67d3, #9a80dc);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Text Section */
+.membership-text {
+    max-width: 60%;
+}
+
+.membership-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.membership-text .highlight {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.membership-text p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+.sub-text a {
+    color: #ffd54f;
+    text-decoration: none;
+}
+
+.sub-text a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.explore-button {
+    background-color: #ffc107;
+    color: #4a2f87;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.explore-button:hover {
+    background-color: #e6aa08;
+}
+
+/* Image Section */
+.membership-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

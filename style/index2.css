@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px 20px;
+    background-color: #fff;
+    border-bottom: 0.2px solid gray;
+    /* margin-top: 39px; */
+    z-index: 999;
+}
+
+
+/* Navbar Actions */
+.navbar .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Increased gap for better spacing */
+}
+
+/* Action Items */
+.navbar .action-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar .action-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar .action-item:hover {
+    color: rgb(25, 113, 113);
+    /* Changed hover color for better visibility */
+}
+
+.navbar .action-item h4 {
+    margin: 0;
+    font-size: 12px;
+    /* Reduced font size for better alignment */
+}
+
+.navbar .pincode {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.navbar .pincode .current-img {
+    width: 14px;
+    height: 12px;
+    margin-bottom: -2px;
+}
+
+.navbar .pincode input {
+    margin: 4px 2px 6px 60px;
+    width: 170px;
+    height: 35px;
+    border-radius: px;
+}
+
+.navbar .logo {
+    display: flex;
+    /* gap: 25px; */
+    /* width: 120px; */
+}
+
+/* secong hr line for links  */
+.links {
+    text-align: center;
+    padding: 13px 0;
+    height: 50px;
+    /* font-size: 16px; */
+    margin-top: 12px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+
+}
+
+.links a:hover {
+    color: rgb(16, 132, 126);
+
+}
+
+/* search bar styling  */
+.search-bar {
+    position: absolute;
+    display: none;
+    padding: 7px;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    width: 40%;
+    margin-left: 250px;
+    top: 17px;
+}
+
+.search-bar.visible {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color:rgb(38, 143, 138);
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color:rgb(23, 71, 68);
+}
+/* search functionality css  */
+.image-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-item[style="display: none;"] {
+    opacity: 0;
+    transform: scale(0.95);
+}
+.image-item h4 a{
+    color: #555;
+}
+.image-item h5{
+    color: rgb(234, 68, 68);
+    font-size: 12px;
+}
+.image-item h5:hover{
+    color: rgb(221, 96, 96) !important;
+}
+
+/* login page styling  */
+/* Sliding Drawer Styling */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Hidden initially */
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.drawer.active {
+    right: 0;
+    /* Visible when active */
+}
+
+.drawer-header {
+    background-color: #008c72;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawer-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.drawer-body {
+    padding: 20px;
+}
+
+.drawer-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.drawer-body .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.drawer-body .input-group span {
+    padding: 10px;
+    background-color: #f0f0f0;
+    
+}
+
+.drawer-body .input-group input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.drawer-body button {
+    padding: 10px;
+    background-color: #008c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drawer-body button:hover {
+    background-color: #006b59;
+}
+
+.drawer-body p {
+    font-size: 14px;
+    color: #555;
+}
+
+.drawer-body a {
+    color: #008c72;
+    text-decoration: none;
+}
+
+.drawer-body a:hover {
+    text-decoration: underline;
+}
+
+
+.logo>img {
+    height: 60px;
+    margin-top: 13px;
+}
+
+.links>a {
+    font-size: 17px;
+}
+
+.h5-class {
+    display: inline-block;
+    width: 230px;
+    /* margin-left: -320px; */
+}
+#loginForm input{
+    height: 30px;
+    background-color: #caf1ea;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.show-password-label{
+display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.show-password-label input{
+margin: 0;
+}
+#loginForm label{
+    text-align: start;
+}
+
+
+/* ///footer styling  */
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(238, 244, 255);
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1 1 100px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 200px;
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: 14px;
+    color: #232222;
+
+}
+
+.bottom-para {
+    font-size: 14px;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+    /* margin: 10px 0; */
+}
+
+.payment-icons img {
+    height: 20px;
+}

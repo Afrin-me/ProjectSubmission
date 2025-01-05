@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="./style/product.css">
+  <link rel="stylesheet" href="./style/nav.css">
+</head>
+<body>
+ <div class="nav">
+  <div class="logo">
+    <a href="index2.html">
+      <img
+        src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0"
+        alt="mylogo"
+      />
+    </a>
+  </div>
+
+  <div class="actions">
+    <a href="wishlist.html" class="action-item" title="Wishlist">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/833/833472.png"
+        alt="Wishlist"
+      />
+      <h4>Wishlist</h4>
+    </a>
+    <a href="cart.html" class="action-item" title="Cart">
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/9219/9219671.png"
+        alt="Cart"
+      />
+      <h4>Cart</h4>
+    </a>
+  </div>
+</div>
+
+  <header>
+    
+    <h1>Product Catalog</h1>
+    <nav class="main-nav">
+      <ul>
+         <li><a href="#Must-Have">Must Have</a></li>
+        <li><a href="#Skin-Care">Skin Care</a></li>
+       
+        <li><a href="#Elderly-essential">Elderly Essential</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- icon nav for wishlist and cart  -->
+   <nav class="icon-navbar">
+    <ul>
+      <li>
+        <a href="wishlist.html" title="View Wishlist">
+          <i class="fas fa-heart"></i>
+        </a>
+      </li>
+      <li>
+        <a href="cart.html" title="View Cart">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="products-container">
+    <!-- Products will be dynamically loaded here -->
+  </div>
+  <a href="wishlist.html">View Wishlist</a>
+<a href="cart.html">View Cart</a>
+
+
+  <script src="./script/product.js"></script>
+</body>
+</html>
