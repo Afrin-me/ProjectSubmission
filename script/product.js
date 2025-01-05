@@ -1,7 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const apiUrl = "http://localhost:3000/categories";
+  const apiUrl = "https://pewter-trusting-agreement.glitch.me/categories";
 
   // Function to fetch products from the JSON Server and display them
   async function loadProducts() {
