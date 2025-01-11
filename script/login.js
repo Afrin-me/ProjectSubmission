@@ -34,7 +34,7 @@ loginForm.addEventListener("submit", (event) => {
     return;
   }
 
-  const apiEndpoint = "http://localhost:3000/loginUsers";
+  const apiEndpoint = "https://pewter-trusting-agreement.glitch.me/loginUsers";
   const requestData = { email, password };
 
   fetch(apiEndpoint, {
