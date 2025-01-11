@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
      productCard.innerHTML = `
         <img src="${product.image}" alt="${product.name}">
         <h3>${product.name}</h3>
-        <p>${product.description}</p>
+        
         <p class="price">$${product.price}</p>
         <div class="quantity-container">
           <button class="decrement" data-product-id="${product.id}">-</button>
